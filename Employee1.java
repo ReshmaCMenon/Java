@@ -26,10 +26,10 @@ public class Employee1{
 }
 
 
-class Teeacher extends Employee1{
+class Teacher extends Employee1{
     String dept,subject;
 
-    public Teeacher() {
+    public Teacher() {
         dept=" ";
         subject=" ";
     }
@@ -67,10 +67,10 @@ class Teeacher extends Employee1{
         Scanner reader=new Scanner(System.in);
         System.out.print("Enter the no of Employees:");
         n=reader.nextInt();
-        Teeacher t[]=new Teeacher[n];
+        Teacher t[]=new Teacher[n];
 
         for(int i=0;i<n; i++){
-            t[i]=new Teeacher();
+            t[i]=new Teacher();
             t[i].einput();
             t[i].eData();
             System.out.print("\n");
@@ -82,3 +82,4 @@ class Teeacher extends Employee1{
         }
     }
 }
+
